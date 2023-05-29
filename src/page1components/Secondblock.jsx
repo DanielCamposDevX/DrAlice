@@ -47,9 +47,6 @@ const Left = styled.div`
         height: 500px;
         border-radius:8px;
         filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.25));
-
-        -webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	    animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         
     }
     `
@@ -58,27 +55,20 @@ const Right = styled.div`
     width: 200px;
     
     h1{
+        font-family: 'Playfair', serif;
         font-size:45px;
         color:white;
-
         filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.10));
 
-        -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-            animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-
-
-        -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-            animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+      
     }
     p{
+        font-family: 'Playfair', serif;
         margin-top: 40px;
         font-size:18px;
         color:white;
         text-align:justify;
-
         filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.10));
-         
-        -webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	    animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
     }
 `

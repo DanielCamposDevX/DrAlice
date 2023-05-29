@@ -3,18 +3,24 @@ import styled from "styled-components"
 export default function Fourthblock() {
     return (
         <Box>
-            <Left>
-                <h1>AliceBastos</h1>
-                <h2>Psicologa CRP04/70666</h2>
-            </Left>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIO8Bt_W5GbADFqBfJwpvMHy1e5bKyzq8yKx3aRA5l&s" alt="Foto perfil" />
+            <Post>
+                <img src="https://blog.emania.com.br/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/02/direitos-autorais-e-de-imagem-1024x683.jpg.webp" alt="" />
+                <h1>O por do Sol</h1>
+            </Post>
+            <Post>
+                <img src="https://blog.emania.com.br/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/02/direitos-autorais-e-de-imagem-1024x683.jpg.webp" alt="" />
+                <h1>O por do Sol</h1>
+            </Post>
+            <Post>
+                <img src="https://blog.emania.com.br/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/02/direitos-autorais-e-de-imagem-1024x683.jpg.webp" alt="" />
+                <h1>O por do Sol</h1>
+            </Post>
         </Box>
     )
 }
 
 const Box = styled.div`
-    margin-top:70px;
-    background-color: #FDCCCC;
+    background-color: #BC6C25;;
     height: 700px;
     display:flex;
     justify-content: space-around;
@@ -23,21 +29,18 @@ const Box = styled.div`
         height: 500px;
     }
 `
-
-const Left = styled.div`
+const Post = styled.div`
     display:flex;
     flex-direction:column;
-
-    width:310px;
-    overflow-wrap:break-word;
-    
-    
-    h1{
-      font-size:110px;
-      color:white;
+    align-items: center;
+    img{
+        width:300px;
+        border-radius: 10px;
+        filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.25));
+        border: 1px solid black;
     }
-    h2{
-     font-size: 24px;
-     color: white;
+    h1{
+        color:white;
+        font-size: 30px;
     }
 `
