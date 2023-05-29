@@ -1,24 +1,31 @@
-import { useState } from 'react'
-import Firstblock from './page1components/Firstblock'
-import Secondblock from './page1components/Secondblock'
-import Thirdblock from './page1components/Thirdblock'
-import Fourthblock from './page1components/Fourthblock'
-import Fifthblock from './page1components/Fifthblock'
-import styled from 'styled-components'
-import { createGlobalStyle } from 'styled-components'
+import { useState, useEffect, useRef } from 'react';
+import Firstblock from './page1components/Firstblock';
+import Secondblock from './page1components/Secondblock';
+import Thirdblock from './page1components/Thirdblock';
+import Fourthblock from './page1components/Fourthblock';
+import Fifthblock from './page1components/Fifthblock';
+import styled from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 function App() {
-  const [count, setCount] = useState(0)
+  
+  const [second,setSecond]= useState(false);
+  const [third,setThird]= useState(false);
+  const [fourth,setFourth]= useState(false);
+  const [fifth,setFifth]= useState(false);
+
+ 
+  
 
   return (
 
     <>
       <GlobalStyle />
       <Firstblock />
-      <Secondblock />
-      <Thirdblock />
-      <Fourthblock />
-      <Fifthblock />
+      <Secondblock second={second} setSecond={setSecond}/>
+      <Thirdblock third={third} setThird={setThird}/>
+      <Fourthblock fourth={fourth} setFourth={setFourth}/>
+      <Fifthblock fifth={fifth} setFifth={setFifth}/>
     </>
   )
 }
