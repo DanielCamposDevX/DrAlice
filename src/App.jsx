@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import { createGlobalStyle, keyframes } from 'styled-components';
 import reset from './Reset';
 import { IoLogoWhatsapp,IoLogoInstagram } from 'react-icons/io5'
+import logo from './assets/Maria_Alice.png'
 
 export default function App() {
 
@@ -18,7 +19,7 @@ export default function App() {
       <Header />
       <HeaderContainer>
         <Container>
-          <h1>Alice Bastos</h1>
+          <img src={logo} alt="logo" />
           <Choice>Sobre </Choice>
           <Choice>Skills</Choice>
           <Choice>Posts</Choice>
@@ -55,7 +56,7 @@ background-color:transparent;
 border: none;
 margin-right: 30px;
 cursor: pointer;
-font-size: 45px;
+font-size: 25px;
 color:white;
 transition: color 0.3s ease 0s;
 :hover{
@@ -66,7 +67,7 @@ transition: color 0.3s ease 0s;
 
 const Header = styled.div`
   filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
-  background-color: rgba(255,255,255,0.1);
+  background-color: #7bcab8;
   backdrop-filter: blur(100px);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   filter: alpha(opacity=90);
@@ -100,6 +101,8 @@ const HeaderContainer = styled.div`
     margin-left: 50px;
     margin-right:30px;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
+    white-space: nowrap
+
   }
 `
 
@@ -109,6 +112,12 @@ const Container = styled.div`
   height:100%;
   display:flex;
   align-items:center;
+  overflow:clip;
+  img{
+    margin-top:20px;
+    height:400%;
+
+  }
 `
 
 const Choice = styled.button`

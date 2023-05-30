@@ -34,7 +34,7 @@ export default function Fourthblock() {
 }
 
 const Box = styled.div`
-    background-color: #374c47;;
+    background-color:  #7bcab8;
     height: 700px;
     display:flex;
     justify-content: space-around;

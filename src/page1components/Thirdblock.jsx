@@ -70,7 +70,7 @@ const Box = styled.div`
 const Right = styled.div`
     width: 50%;
     height: 100%;
-    background-color: #687e79;
+    background-color: #50b39a;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,7 +96,7 @@ const Right = styled.div`
 
 const Left = styled.div`
   width: 50%;
-  background-color: #a4bcb4;
+  background-color: #53bead;
     height: 100%;
     display: flex;
     flex-direction: column;

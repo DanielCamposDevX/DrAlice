@@ -37,7 +37,7 @@ const Place = styled.div`
   position:absolute;
   right:30px;
   bottom: 40px;
-  font-size:50px;
+  font-size:280%;
   color: #3e4948;
 `
 
@@ -53,8 +53,7 @@ const Box = styled.div`
   align-items: center;
 
   img {
-    height: 500px;
-    width: 400px;
+    width: 33%;
     border-radius: 8px;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
   }
@@ -65,15 +64,15 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #a4bcb4;
-  padding:30px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding:3%;
+  padding-top: 4%;
+  padding-bottom: 4%;
   border: 1px dotted #318f87c7;
   border-radius:10px;
   filter: drop-shadow(15px 10px 3px rgba(0, 0, 0, 0.1));
 
   h1 {
-    font-size: 110px;
+    font-size: 625%;
     font-weight: 800;
     font-style: italic;
     font-family: 'Playfair', serif;
@@ -86,28 +85,10 @@ const Left = styled.div`
 
   h2 {
     margin-top: 70px;
-    font-size: 24px;
+    font-size: 140%;
     font-weight: 700;
     color: #3e4948;
     font-family: 'Playfair', serif;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.1));
   }
-`
-const Whats = styled.button`
-  img{
-    width:50px;
-    color:white;
-    };
-  width:50px;
-  height:50px;
-  display:none;
-  justify-content:center;
-  align-items:center;
-  position:absolute;
-  top:40px;
-  right:100px;
-  background-color:transparent;
-  border: none;
-  cursor: pointer;
-
 `
