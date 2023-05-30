@@ -37,12 +37,7 @@ export default function Fifthblock() {
 }
 
 const Box = styled.div`
-      background: rgb(255, 239, 200);
-  background: radial-gradient(
-    circle,
-    rgba(255, 239, 200, 1) 3%,
-    rgba(239, 220, 172, 1) 100%
-  );
+    background-color: #c1e2df;
     height: 700px;
     display:flex;
     flex-direction:column;

@@ -86,13 +86,8 @@ cursor: pointer;
 
 const Header = styled.div`
   filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
-  background: rgb(255, 239, 200);
-  background: radial-gradient(
-    circle,
-    rgba(255, 239, 200, 1) 3%,
-    rgba(239, 220, 172, 1) 100%
-  );
-  backdrop-filter: blur(10px);
+  background-color: rgba(255,255,255,0.1);
+  backdrop-filter: blur(100px);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   filter: alpha(opacity=90);
   -moz-opacity: 0.90;

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import ScrollReveal from 'scrollreveal';
 import whats from "../assets/whatsapp-logo-variant.svg"
 import Perfil from '../assets/Perfil.jpg';
+import flowers from '../assets/5046614.jpg'
 
 export default function Firstblock() {
  
@@ -33,13 +34,7 @@ export default function Firstblock() {
 
 const Box = styled.div` 
   position:relative;
-
-  background: rgb(255, 239, 200);
-  background: radial-gradient(
-    circle,
-    rgba(255, 239, 200, 1) 3%,
-    rgba(239, 220, 172, 1) 100%
-  );
+  background: #fff url(${flowers}) center bottom/cover no-repeat local;
   height: 700px;
   display: flex;
   justify-content: space-around;
@@ -72,7 +67,7 @@ const Left = styled.div`
     margin-top: 70px;
     font-size: 24px;
     font-weight: 700;
-    color: white;
+    color: #3e4948;
     font-family: 'Playfair', serif;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.1));
   }
@@ -84,7 +79,7 @@ const Whats = styled.button`
     };
   width:50px;
   height:50px;
-  display:flex;
+  display:none;
   justify-content:center;
   align-items:center;
   position:absolute;

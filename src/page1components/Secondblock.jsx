@@ -30,7 +30,7 @@ export default function Secondblock() {
 }
 
 const Box = styled.div`
-    background: #BC6C25;
+    background-color: #374c47;
     height: 700px;
     display:flex;
     justify-content: space-around;
@@ -57,7 +57,7 @@ const Right = styled.div`
     h1{
         font-family: 'Playfair', serif;
         font-size:45px;
-        color:white;
+        color:#ecf7f6;
         filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.10));
 
       
@@ -66,7 +66,7 @@ const Right = styled.div`
         font-family: 'Playfair', serif;
         margin-top: 40px;
         font-size:18px;
-        color:white;
+        color:#ecf7f6;
         text-align:justify;
         filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.10));
 

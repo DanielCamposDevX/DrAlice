@@ -18,14 +18,14 @@ export default function Thirdblock() {
 
     return (
         <Box>
-            <Left className="reveal">
-                <Bloco>
+            <Left >
+                <Bloco className="reveal">
                     <h1>Teste</h1>
                     <p>Dsadasdasdasdasdasdasdas</p>
                     <p>Dsadasdasdasdasdasdasdas</p>
                     <p>Dsadasdasdasdasdasdasdas</p>
                 </Bloco>
-                <Bloco>
+                <Bloco className="reveal">
                     <h1>Teste2</h1>
                     <p>sadasdasdasdasda</p>
                     <p>Dsadasdasdasdasdasdasdas</p>
@@ -33,13 +33,13 @@ export default function Thirdblock() {
                     <p>Dsadasdasdasdasdasdasdas</p>
                 </Bloco>
             </Left>
-            <Right className="reveal">
-                <Bloco> <h1>Teste</h1>
+            <Right >
+                <Bloco className="reveal"> <h1>Teste</h1>
                     <p>Dsadasdasdasdasdasdasdas</p>
                     <p>Dsadasdasdasdasdasdasdas</p>
                     <p>Dsadasdasdasdasdasdasdas</p>
                 </Bloco>
-                <Bloco>
+                <Bloco className="reveal">
                     <h1>Teste2</h1>
                     <p>sadasdasdasdasda</p>
                     <p>Dsadasdasdasdasdasdasdas</p>
@@ -52,12 +52,7 @@ export default function Thirdblock() {
 }
 
 const Box = styled.div`
-     background: rgb(255, 239, 200);
-  background: radial-gradient(
-    circle,
-    rgba(255, 239, 200, 1) 3%,
-    rgba(239, 220, 172, 1) 100%
-  );
+
     height: 700px;
     display:flex;
     justify-content: space-between;
@@ -69,7 +64,7 @@ const Box = styled.div`
 const Right = styled.div`
     width: 50%;
     height: 100%;
-    background-color: rgb(216, 198, 153);
+    background-color: #687e79;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,7 +72,7 @@ const Right = styled.div`
     h1{
         font-family: 'Playfair', serif;
         font-size:45px;
-        color:white;
+        color:#ecf7f6;
         filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.10));
 
       
@@ -86,7 +81,7 @@ const Right = styled.div`
         font-family: 'Playfair', serif;
         margin-top: 40px;
         font-size:18px;
-        color:white;
+        color:#ecf7f6;
         text-align:justify;
         filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.10));
 
@@ -95,6 +90,7 @@ const Right = styled.div`
 
 const Left = styled.div`
   width: 50%;
+  background-color: #a4bcb4;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -103,7 +99,7 @@ const Left = styled.div`
     h1{
         font-family: 'Playfair', serif;
         font-size:45px;
-        color:white;
+        color:#ecf7f6;
         filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.10));
 
       
@@ -112,7 +108,7 @@ const Left = styled.div`
         font-family: 'Playfair', serif;
         margin-top: 40px;
         font-size:18px;
-        color:white;
+        color:#ecf7f6;
         text-align:justify;
         filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.10));
 

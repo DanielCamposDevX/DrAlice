@@ -34,7 +34,7 @@ export default function Fourthblock() {
 }
 
 const Box = styled.div`
-    background-color: #BC6C25;;
+    background-color: #374c47;;
     height: 700px;
     display:flex;
     justify-content: space-around;
@@ -54,7 +54,7 @@ const Post = styled.div`
     h1{
      
     font-family: 'Playfair', serif;
-        color:white;
+        color:#ecf7f6;
         font-size: 30px;
     }
 `
