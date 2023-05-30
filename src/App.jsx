@@ -12,7 +12,7 @@ import reset from './Reset';
 
 export default function App() {
 
-  const [showHeader, setShowHeader] = useState(true);
+  const [showHeader, setShowHeader] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
