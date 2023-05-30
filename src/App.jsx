@@ -1,4 +1,3 @@
-import { useState, useEffect, useRef } from 'react';
 import Firstblock from './page1components/Firstblock';
 import Secondblock from './page1components/Secondblock';
 import Thirdblock from './page1components/Thirdblock';
@@ -6,50 +5,30 @@ import Fourthblock from './page1components/Fourthblock';
 import Fifthblock from './page1components/Fifthblock';
 import styled from 'styled-components';
 import { createGlobalStyle, keyframes } from 'styled-components';
-import whats from "./assets/whatsapp-logo-variant.svg"
-import instagram from "./assets/logo-instagram.svg"
 import reset from './Reset';
+import { IoLogoWhatsapp,IoLogoInstagram } from 'react-icons/io5'
 
 export default function App() {
-
-  const [showHeader, setShowHeader] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-
-      setShowHeader(currentScrollPos > 0);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-
-
 
 
   return (
 
     <>
       <GlobalStyle />
-      {showHeader && <Header />}
-      {showHeader && <HeaderContainer>
+      <Header />
+      <HeaderContainer>
         <Container>
-        <h1>Alice Bastos</h1>
-        <Choice>Sobre</Choice>
-        <Choice>Skills</Choice>
-        <Choice>Posts</Choice>
-        <Choice>Agendar</Choice>
+          <h1>Alice Bastos</h1>
+          <Choice>Sobre </Choice>
+          <Choice>Skills</Choice>
+          <Choice>Posts</Choice>
+          <Choice>Agendar</Choice>
         </Container>
         <Container>
-          <Whats><img src={whats} alt="wpp" /></Whats>
-          <Whats><img src={instagram} alt="insta" /></Whats>
+          <Whats><IoLogoWhatsapp /></Whats>
+          <Whats><IoLogoInstagram /></Whats>
         </Container>
-      </HeaderContainer>}
+      </HeaderContainer>
       <Firstblock />
       <Secondblock />
       <Thirdblock />
@@ -75,12 +54,13 @@ align-items:center;
 background-color:transparent;
 border: none;
 margin-right: 30px;
-
-img{
-  width:30px;
-  height:30px;
-}
 cursor: pointer;
+font-size: 45px;
+color:white;
+transition: color 0.3s ease 0s;
+:hover{
+    color:#3e4948;
+  }
 `
 
 
@@ -99,8 +79,6 @@ const Header = styled.div`
   width:100%;
   height: 70px;
   z-index: 3;
-  animation: ${({ showHeader }) => (showHeader ? fadeOut : fadeIn)} 0.4s ease;
-  animation-fill-mode: both;
 
 `
 const HeaderContainer = styled.div`
@@ -124,27 +102,6 @@ const HeaderContainer = styled.div`
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
   }
 `
-const fadeIn = keyframes`
-  from {
-    filter: blur(20px);
-    opacity: 0;
-  }
-  to {
-    filter: blur(3px);
-    opacity: 0.8;
-  }
-`;
-
-const fadeOut = keyframes`
-  from {
-    filter: blur(3px);
-    opacity: 0.8;
-  }
-  to {
-    filter: blur(20px);
-    opacity: 0;
-  }
-`;
 
 const Container = styled.div`
   display:flex;
@@ -168,9 +125,9 @@ const Choice = styled.button`
   width:150px;
   height: 100%;
   background-color: rgba(255, 0, 0, 0);
-  transition: background-color 1s ease 0s;
+  transition: background-color 0.3s ease 0s;
   :hover{
-    background-color:  rgba(255, 255, 255, 0.9);
+    background-color:  rgba(255, 255, 255, 0.25);
   }
   img{
     width: 30px;

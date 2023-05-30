@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
+import { BsBook, BsDot } from 'react-icons/bs'
 
 export default function Thirdblock() {
 
@@ -20,31 +21,36 @@ export default function Thirdblock() {
         <Box>
             <Left >
                 <Bloco className="reveal">
+                    <Place><BsBook /><BsDot /><BsDot /><BsDot /></Place>
                     <h1>Teste</h1>
                     <p>Dsadasdasdasdasdasdasdas</p>
                     <p>Dsadasdasdasdasdasdasdas</p>
                     <p>Dsadasdasdasdasdasdasdas</p>
                 </Bloco>
                 <Bloco className="reveal">
+                    <Place><BsBook /><BsDot /><BsDot /><BsDot /></Place>
                     <h1>Teste2</h1>
                     <p>sadasdasdasdasda</p>
                     <p>Dsadasdasdasdasdasdasdas</p>
                     <p>Dsadasdasdasdasdasdasdas</p>
-                    <p>Dsadasdasdasdasdasdasdas</p>
+
                 </Bloco>
             </Left>
             <Right >
-                <Bloco className="reveal"> <h1>Teste</h1>
+                <Bloco className="reveal">
+                    <Place><BsBook /><BsDot /><BsDot /><BsDot /></Place>
+                    <h1>Teste</h1>
                     <p>Dsadasdasdasdasdasdasdas</p>
                     <p>Dsadasdasdasdasdasdasdas</p>
                     <p>Dsadasdasdasdasdasdasdas</p>
                 </Bloco>
                 <Bloco className="reveal">
+                    <Place><BsBook /><BsDot /><BsDot /><BsDot /></Place>
                     <h1>Teste2</h1>
                     <p>sadasdasdasdasda</p>
                     <p>Dsadasdasdasdasdasdasdas</p>
                     <p>Dsadasdasdasdasdasdasdas</p>
-                    <p>Dsadasdasdasdasdasdasdas</p>
+
                 </Bloco>
             </Right>
         </Box>
@@ -115,6 +121,17 @@ const Left = styled.div`
     }
 `
 const Bloco = styled.div`
-
+    position:relative;
     width:300px;
+`
+const Place = styled.div`
+  position:absolute;
+  left:-40px;
+  top: 10px;
+  font-size:30px;
+  color:#ecf7f6;
+  height:222px;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
 `

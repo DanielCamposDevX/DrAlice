@@ -47,7 +47,7 @@ table {
  border-spacing: 0;
 }
 
-body{background-color: rgb(255, 239, 200);}
+body{background-color: #a4bcb4;}
 `
 
 export default reset;

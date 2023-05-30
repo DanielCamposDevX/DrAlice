@@ -45,11 +45,12 @@ const Post = styled.div`
     flex-direction:column;
     align-items: center;
     img{
-        width:400px;
-        height:400px;
-        border-radius: 10px;
+        width:350px;
+        height:350px;
+        border-radius: 10000px;
         filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.25));
         border: 1px solid black;
+        margin-bottom:70px;
     }
     h1{
      
