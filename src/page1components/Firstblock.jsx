@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import ScrollReveal from 'scrollreveal';
-import animations from './Animations';
+import whats from "../assets/whatsapp-logo-variant.svg"
 import Perfil from '../assets/Perfil.jpg';
 
-export default function Firstblock(){
+export default function Firstblock() {
+ 
   useEffect(() => {
     ScrollReveal().reveal('.reveal', {
       duration: 1000,
@@ -24,13 +25,15 @@ export default function Firstblock(){
         <h1>Bastos</h1>
         <h2>Psicologa CRP04/70666</h2>
       </Left>
+      <Whats className="reveal"><img src={whats} /></Whats>
       <img src={Perfil} alt="Foto perfil" className="reveal" />
     </Box>
   );
 };
 
-const Box = styled.div`
-  margin-top: 70px;
+const Box = styled.div` 
+  position:relative;
+
   background: rgb(255, 239, 200);
   background: radial-gradient(
     circle,
@@ -73,6 +76,21 @@ const Left = styled.div`
     font-family: 'Playfair', serif;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.1));
   }
-`;
-
-
+`
+const Whats = styled.button`
+  img{
+    width:50px;
+    color:white;
+    };
+  width:50px;
+  height:50px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:absolute;
+  top:40px;
+  right:100px;
+  background-color:transparent;
+  border: none;
+  cursor: pointer;
+`
